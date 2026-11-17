@@ -24,6 +24,6 @@ struct GameCardView: View {
     }
 }
 
-//#Preview {
-//    GameCardView(section: GameSection(name: "test", subtitle: "test", icon: "heart.fill"))
-//}
+#Preview {
+    GameCardView(section: GameSection(name: "test", subtitle: "test", icon: "heart.fill"))
+}
