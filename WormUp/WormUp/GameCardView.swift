@@ -23,3 +23,7 @@ struct GameCardView: View {
         .shadow(radius: 3)
     }
 }
+
+#Preview {
+    GameCardView(section: GameSection(name: "test", subtitle: "test", icon: "heart.fill"))
+}
