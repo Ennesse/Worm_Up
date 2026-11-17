@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct GameCardView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let section: GameSection
 
-#Preview {
-    GameCardView()
+    var body: some View {
+        VStack {
+            Text(section.name)
+                .font(.title2)
+                .bold()
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 150)
+        .background(Color.white)
+        .cornerRadius(20)
+        .shadow(radius: 3)
+    }
 }

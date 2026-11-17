@@ -24,7 +24,7 @@ struct ChooseView: View {
                 Spacer()
                 LazyVGrid(columns: columns, spacing: 12) {
                     ForEach(GameSection.all) { section in
-                        GameCardView(section: section)
+                        GameCardView (section: section)
                     }
                 }
                 Spacer()
