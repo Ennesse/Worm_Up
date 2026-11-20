@@ -8,13 +8,13 @@ import Playgrounds
                 NavigationStack {
                     VStack (alignment: .center, spacing: 30){
                         Text("Your brain\nis rotting")
-                            .font(.system(size: 60))
+                            .font(.system(size: 60, design : .rounded))
                             .padding().foregroundStyle(Color.colorRose).fontWeight(.bold).multilineTextAlignment(.center)
                             
 
                         Image("Image")
 
-                        Text("Worm it\n up!").font(.system(size: 60))
+                        Text("Worm it\n up!").font(.system(size: 60, design: .rounded))
                             .padding().foregroundStyle(Color.colorRose).fontWeight(.bold).multilineTextAlignment(.center)
                             
 
