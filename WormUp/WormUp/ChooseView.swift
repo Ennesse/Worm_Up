@@ -9,17 +9,14 @@ struct ChooseView: View {
 
     var body: some View {
         ZStack {
-            Color(red: 0.66, green: 0.80, blue: 0.85)
-                .ignoresSafeArea()
             VStack (alignment: .leading) {
                 HStack {
-                    Text("Choose how to warm up")
-                        .bold()
-                        .font(.largeTitle)
-                    Spacer()
-                    Image("WormRound").resizable().frame(width: 90, height: 90)
+                    Text("Choose how to\n warm up")
+                        .font(.system(size: 45)).foregroundStyle(Color.colorRose).fontWeight(.heavy).multilineTextAlignment(.leading)
+                    
+
                 }
-                Text("Pick one. It takes about two minutes")
+                Text("Pick one. It takes about two minutes").foregroundStyle(.white)
                 
                 Spacer()
                 LazyVGrid(columns: columns, spacing: 12) {
@@ -31,8 +28,10 @@ struct ChooseView: View {
             }
             .padding()
             
-        }
+        } .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("Color Background"))
     }
+    
 
 }
 #Preview {
