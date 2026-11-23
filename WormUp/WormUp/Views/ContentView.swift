@@ -34,10 +34,6 @@ import Playgrounds
             }
         }
 
-        #Preview {
-            ContentView()
-        }
-
 
 
 #Preview {
