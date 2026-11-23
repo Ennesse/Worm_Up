@@ -14,6 +14,22 @@ struct InstructionsView: View {
     let blu = Color(red: 0.31, green: 0.36, blue: 0.67)
     let rosa = Color(red: 1.0, green: 0.91, blue: 0.91)
     
+    @ViewBuilder
+    func giocoGiusto() -> some View {
+        switch istruzione.categoria.uppercased() {
+        case "ATTENTION":
+            ShapeMatchView()
+        case "MEMORY":
+            Text("Gioco Memory in arrivo")
+        case "LANGUAGE":
+            Text("Gioco Language in arrivo")
+        case "LOGIC":
+            Text("Gioco Logic in arrivo")
+        default:
+            Text("Gioco non trovato")
+        }
+    }
+    
     var body: some View {
         ZStack {
             rosa.ignoresSafeArea()
@@ -99,8 +115,20 @@ struct InstructionsView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical)
                     
-                    Button {
+                    /*Button {
                         
+                    } label: {
+                        Text("I'm ready!")
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(blu)
+                            .clipShape(Capsule())
+                    }*/
+                    
+                    NavigationLink {
+                        giocoGiusto()
                     } label: {
                         Text("I'm ready!")
                             .font(.headline)
