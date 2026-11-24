@@ -9,30 +9,47 @@ import SwiftUI
 
 struct GameCardView: View {
     let section: GameSection
-
+    
+    let blu = Color(red: 0.18, green: 0.24, blue: 0.53)
+    
+    var immagineSinistra: Bool {
+        section.name == "Attention" || section.name == "Logic"
+    }
+    
+    var senzaImmagine: Bool {
+        section.name == "Language"
+    }
+    
     var body: some View {
-        VStack(alignment: .center, spacing: 12) {
-
-                Text(section.name)
-                .font(.title2)
-                .bold()
-                .foregroundColor(Color.black)
-
-            Text(section.subtitle)
-                .font(.caption)
-                .foregroundColor(.gray)
+        ZStack {
+            if senzaImmagine == false {
+                section.icon
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: immagineSinistra ? .bottomLeading : .bottomTrailing)
+            }
             
-            section.icon
-                .resizable()
-                .scaledToFit()
-                .frame(width: 100, height: 100)
+            VStack(alignment: immagineSinistra ? .trailing : .leading, spacing: 2) {
+                Text(section.name)
+                    .font(.system(size: 22, weight: .heavy, design: .rounded))
+                    .foregroundStyle(blu)
+                
+                Text(section.subtitle)
+                    .font(.system(size: 14, weight: .regular, design: .rounded))
+                    .foregroundStyle(blu)
+                    .multilineTextAlignment(immagineSinistra ? .trailing : .leading)
+            }
+            .padding(.leading, immagineSinistra ? 50 : 0)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: immagineSinistra ? .topTrailing : .topLeading)
         }
-        .frame(maxWidth: .infinity)
-        .padding()
+        .frame(height: 125)
+        .padding(14)
         .background(Color.white)
-        .clipShape(RoundedRectangle(cornerRadius: 20))
+        .clipShape(RoundedRectangle(cornerRadius: 24))
     }
 }
+
 #Preview {
-    GameCardView(section: GameSection(name: "test", subtitle: "test", icon: Image (systemName: "heart.fill")))
+    GameCardView(section: GameSection.all[0])
 }

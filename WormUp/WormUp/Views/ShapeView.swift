@@ -30,13 +30,13 @@ struct ShapeMatchView: View {
             
             if finito {
                 VStack(spacing: 20) {
-                    Text("Nice Warm Up!")
+                    Text("Nice Worm Up!")
                         .font(.largeTitle)
                         .bold()
                     
                     Text("You got \(punteggio) out of 6")
                     
-                    Image("Attention")
+                    Image("RealWorm")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 200)
@@ -92,7 +92,7 @@ struct ShapeMatchView: View {
                         
                         Spacer()
                         
-                        Image("Attention")
+                        Image("ShapeMatch")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 90)
@@ -163,7 +163,7 @@ struct ShapeMatchView: View {
                         .font(.headline)
                         .multilineTextAlignment(.center)
                     
-                    Image("Attention")
+                    Image(esito ? "RealWorm" : "Attention")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 150)
