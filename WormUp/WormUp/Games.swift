@@ -29,11 +29,11 @@ let all : [Instruction] = [
                         Passo(titolo: "Pick", descrizione: "Tap the one that matches. Mirror images and moved blocks don't count.")
                       ] ),
     
-    Instruction(categoria: "Attention", titolo: "Shape match", subtitle: "Find the shape that was only turned", immagine: Image("Attention"), im_In: Image("Attention 1"),
+    Instruction(categoria: "Language", titolo: "Word maker", subtitle: "Make words using only the letters you're given", immagine: Image("Language"), im_In: Image("Language"),
                 passi:[
-                    Passo(titolo: "ahsdhdhdh", descrizione: "Tap the one that matches. Mirror images and moved blocks don't count."),
-                    Passo(titolo: "hsdsush", descrizione: "hshddhd"),
-                    Passo(titolo: "hshsdhs", descrizione: "xhshsbsdhhd")
+                    Passo(titolo: "Look", descrizione: "Study the letters you are given."),
+                    Passo(titolo: "Build", descrizione: "Tap letters to make a word of 3 or more letters."),
+                    Passo(titolo: "Find", descrizione: "Find at least 10 different words before time runs out.")
                     ] ),
     
     Instruction(categoria: "Attention", titolo: "Shape match", subtitle: "Find the shape that was only turned", immagine: Image("Attention"), im_In: Image("Attention 1"),

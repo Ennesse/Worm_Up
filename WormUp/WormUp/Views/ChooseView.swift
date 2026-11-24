@@ -20,7 +20,7 @@ struct ChooseView: View {
                 Text("Pick one. It takes about 2 minutes.")
                     .foregroundStyle(.white)
                 
-                LazyVGrid(columns: columns, spacing: 12) {
+                LazyVGrid(columns: columns, spacing: 13) {
                     ForEach(Array(GameSection.all.enumerated()), id: \.element.id) { index, section in
                         NavigationLink {
                             InstructionsView(istruzione: all[index])

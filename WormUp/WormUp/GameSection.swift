@@ -11,7 +11,7 @@ struct GameSection: Identifiable {
     // A static array that `ChooseView` can iterate over.
     static let all: [GameSection] = [
         GameSection(name: "Attention", subtitle: "Spot and focus",      icon: Image("Attention")),
-        GameSection(name: "Language",  subtitle: "Words and meaning",   icon: Image(systemName: "brain.fill")),
+        GameSection(name: "Language",  subtitle: "Words and meaning",   icon: Image("Language")),
         GameSection(name: "Memory",    subtitle: "Recall and repeat",   icon: Image("Memory")),
         GameSection(name: "Logic",     subtitle: "Patterns and puzzles", icon: Image("Logic"))
     ]
