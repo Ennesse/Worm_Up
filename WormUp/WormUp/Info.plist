@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>NSAlarmKitUsageDescription</key>
-	<string></string>
+	<string>We need access to alarms, in order to help you starting activities</string>
 </dict>
 </plist>
