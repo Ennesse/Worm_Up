@@ -29,20 +29,20 @@ let all : [Instruction] = [
                         Passo(titolo: "Pick", descrizione: "Tap the one that matches. Mirror images and moved blocks don't count.")
                       ] ),
     
-    Instruction(categoria: "Language", titolo: "Word maker", subtitle: "Make words using only the letters you're given", immagine: Image("Language"), im_In: Image("Language"),
+    Instruction(categoria: "Language", titolo: "Word maker", subtitle: "Make words using only the letters you're given", immagine: Image("Language"), im_In: Image("Language 1"),
                 passi:[
                     Passo(titolo: "Look", descrizione: "Study the letters you are given."),
                     Passo(titolo: "Build", descrizione: "Tap letters to make a word of 3 or more letters."),
                     Passo(titolo: "Find", descrizione: "Find at least 10 different words before time runs out.")
                     ] ),
     
-    Instruction(categoria: "Attention", titolo: "Shape match", subtitle: "Find the shape that was only turned", immagine: Image("Attention"), im_In: Image("Attention 1"),
-                passi:[ Passo(titolo: "ahsdhdhdh", descrizione: "ahhshshs"),
-                        Passo(titolo: "hsdsush", descrizione: "hshddhd"),
-                        Passo(titolo: "hshsdhs", descrizione: "xhshsbsdhhd")
+    Instruction(categoria: "Memory", titolo: "Pattern memory", subtitle: "Watch the tiles light up, then repeat the order", immagine: Image("Memory"), im_In: Image("Memory 1"),
+                passi:[ Passo(titolo: "Match", descrizione: "The tiles light up one by one. Follow them closely."),
+                        Passo(titolo: "Remember", descrizione: "Keep the order in your mind until the lights stop."),
+                        Passo(titolo: "Repeat", descrizione: "Tap the tiles in the same order. Each round adds more tiles.")
                       ] ),
     
-    Instruction(categoria: "Logic", titolo: "Number sequences", subtitle: "Find the rule and complete the sequence", immagine: Image("Logic"), im_In: Image("Logic"),
+    Instruction(categoria: "Logic", titolo: "Number sequences", subtitle: "Find the rule and complete the sequence", immagine: Image("Logic"), im_In: Image("Logic 1"),
                 passi:[ Passo(titolo: "Look", descrizione: "Read the numbers and notice how they change."),
                         Passo(titolo: "Find", descrizione: "Look for the rule: adding, multiplying, squares and more."),
                         Passo(titolo: "Pick", descrizione: "Choose the number that completes the sequence, then read why.")
