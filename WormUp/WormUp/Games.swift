@@ -42,9 +42,9 @@ let all : [Instruction] = [
                         Passo(titolo: "hshsdhs", descrizione: "xhshsbsdhhd")
                       ] ),
     
-    Instruction(categoria: "Attention", titolo: "Shape match", subtitle: "Find the shape that was only turned", immagine: Image("Attention"), im_In: Image("Attention 1"),
-                passi:[ Passo(titolo: "ahsdhdhdh", descrizione: "ahhshshs"),
-                        Passo(titolo: "hsdsush", descrizione: "hshddhd"),
-                        Passo(titolo: "hshsdhs", descrizione: "xhshsbsdhhd")
+    Instruction(categoria: "Logic", titolo: "Number sequences", subtitle: "Find the rule and complete the sequence", immagine: Image("Logic"), im_In: Image("Logic"),
+                passi:[ Passo(titolo: "Look", descrizione: "Read the numbers and notice how they change."),
+                        Passo(titolo: "Find", descrizione: "Look for the rule: adding, multiplying, squares and more."),
+                        Passo(titolo: "Pick", descrizione: "Choose the number that completes the sequence, then read why.")
                       ] )
 ]
