@@ -10,6 +10,7 @@ import Combine
 
 struct ShapeMatchView: View {
     @Environment(\.dismiss) var dismiss
+    @Environment(\.openURL) var openURL
     
     @State var numero = 0
     @State var punteggio = 0
@@ -51,6 +52,23 @@ struct ShapeMatchView: View {
                             .padding()
                             .background(bluGioco)
                             .clipShape(Capsule())
+                    }
+                    
+                    
+                    Button {
+                        openURL(URL(string: "shortcuts://run-shortcut?name=WarmUpFocus")!)
+                    } label: {
+                        HStack {
+                            Image(systemName: "moon")
+                            Text("Set Focus Mode")
+                                .bold()
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                        }
+                        .foregroundStyle(bluGioco)
+                        .padding()
+                        .background(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
                     }
                 }
                 .padding()
