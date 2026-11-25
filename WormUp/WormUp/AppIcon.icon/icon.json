@@ -11,16 +11,29 @@
         {
           "glass" : false,
           "hidden" : false,
-          "image-name" : "Image 4.png",
-          "name" : "Image 4",
+          "image-name" : "Image 5.png",
+          "name" : "Image 5",
           "position" : {
-            "scale" : 0.7,
+            "scale" : 0.55,
             "translation-in-points" : [
               0,
               0
             ]
           }
         }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.3
+      }
+    },
+    {
+      "layers" : [
+
       ],
       "shadow" : {
         "kind" : "neutral",

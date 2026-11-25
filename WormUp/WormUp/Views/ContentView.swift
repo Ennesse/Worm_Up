@@ -13,7 +13,7 @@ struct ContentView: View {
                     .foregroundStyle(Color.colorRose)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
-                
+                // test
                 Image("Image")
                     .resizable()
                     .scaledToFit()
