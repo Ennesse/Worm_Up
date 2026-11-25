@@ -20,11 +20,11 @@ struct InstructionsView: View {
         case "ATTENTION":
             ShapeMatchView()
         case "MEMORY":
-            Text("Gioco Memory in arrivo")
+            MemoryGameView()
         case "LANGUAGE":
-            Text("Gioco Language in arrivo")
+            LanguageGameView()
         case "LOGIC":
-            Text("Gioco Logic in arrivo")
+            LogicGameView()
         default:
             Text("Gioco non trovato")
         }
